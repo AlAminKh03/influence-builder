@@ -1,3 +1,160 @@
 body{
     font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    background-color:  #f5f1f1;
+    margin:0;
+}
+
+main{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: center;
+    margin:0% 10%;
+    
+    }
+
+.first-heading{
+    margin-left: 10%;
+}
+
+
+/* Influencer-products */
+h1{
+    font-size:50px;
+}
+.products{
+    display:flex;
+    align-items: center;
+
+}
+.product{
+    width:70%;
+    margin-left: 75px;
+}
+.product img{
+    width:75%;
+    margin-left: 50px;
+}
+
+.order-link, .contest-link{
+    text-decoration: none;
+    color: white;
+    background-color: #12e70b;
+    border: 0;
+    padding: 12px 15px;
+    font-size: 18px;
+    border-radius: 20px;
+    align-items: center;
+}
+
+.products{
+    margin-bottom: 100px;
+}
+
+
+
+
+/* popular collection  */
+.collection-container{
+    width:1047px;
+    Height: 1662px;
+}
+
+.collection-header{
+    text-align: center;
+}
+.popular-collection{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    justify-content: center;
+    margin:0px 80px;
+    
+}
+.collection-description{
+    color:#000000de
+}
+
+ .collections img{
+     width:95%;
+ }
+
+.collection{
+    background-color:white ;
+    margin:15px;
+    padding:15px 0px 15px 15px;
+}
+.collection-link{
+    display:block;
+    text-decoration: none;
+    color:#12e70b;
+    margin-left: 81%;
+    margin-top: 15px;
+    margin-bottom:80px;
+    font-weight:bold;
+}
+
+div>.fas{
+    color: #FB8200;
+    font-size:12px;
+}
+.rating{
+    margin-left:8px;
+    font-size:16px;
+}
+small{
+    color:#787885;
+}
+
+
+
+
+
+
+/******** feature-blog about contest ******* */
+
+.features{
+    display:flex;
+}
+.feature-banner{
+    width:80%;
+}
+
+.feature-description{
+    margin-left: 100px;
+    width:50%;
+}
+
+/******** footer ****** */
+footer{
+    background-color: #0A0826;
+    color: white;
+    width:100%;
+    text-align: center;
+}
+.footer-heading{
+    margin-top:30px;
+    margin-bottom:0;
+    padding-top:30px;
+}
+.footer-text{
+    margin-top: 8px;
+    font-size:14px;
+    padding:4px;
+}
+
+.icons{
+    margin-bottom: 15px;
+    padding:0px 8px;
+}
+
+
+
+/******* responsive ****** */
+@media only screen and (max-width: 688px){
+    .products{
+        display:grid;
+        grid-template-columns: repeat(1,1fr);
+     justify-content: center;
+    }
 }
