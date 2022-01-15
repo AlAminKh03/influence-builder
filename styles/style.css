@@ -39,6 +39,14 @@ main{
 .product-image{
     width:75%;
     margin-left: 50px;
+    
+    
+}
+.main-camera{
+    transition: transform 2s ease 0.1s;
+}
+.main-camera:hover{
+    transform: rotate(47deg);
 }
 
 .order-link, .contest-link{
@@ -169,13 +177,18 @@ footer{
         flex-direction: column;
         align-items: center;
     }
-    .product-image{
-        width:60%;
+    .product-image img{
+        width:90%;
+        margin-top: 30px;
         margin-right: 35px;
     }
     .contest-link, .collection-link{
         white-space: nowrap;
-        margin-right: 15px;
+        padding-right: 15%;
+    }
+    .collection-link{
+        margin-left: 0px;
+        text-align: center;
     }
     .feature-description{
         width:300px;
@@ -183,3 +196,49 @@ footer{
     }
 
 }
+
+
+
+/* media query 
+      tablet view   */
+
+@media only screen and (min-width:689px) and (max-width:1280px){
+
+
+    .products, .features{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .collection-container-div{
+        display:grid;
+        grid-template-columns: repeat(2,1fr);
+    }
+    .product-image img{
+        width:80%;
+        margin-top: 30px;
+        margin-right: 35px;
+    }
+    .contest-link, .collection-link{
+        white-space: nowrap;
+        padding-right: 15%;
+    }
+
+    .feature-description{
+        width:300px;
+        padding-right: 90px;
+    }
+.feature-banner{
+    width:300px;
+   padding-right:30px;
+   
+}
+.collection-link{
+    margin-left: 0px;
+    text-align: center;
+   
+}
+
+}
+    
