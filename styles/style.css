@@ -13,26 +13,30 @@ main{
     margin:0% 10%;
     
     }
+    h1{
+        font-size:50px;
+    }
 
-.first-heading{
+.first-header{
     margin-left: 10%;
 }
 
 
-/* Influencer-products */
-h1{
-    font-size:50px;
-}
+/* Influencer-products
+      main Content   */
+
+
 .products{
     display:flex;
     align-items: center;
-
+    margin-bottom: 100px;
 }
-.product{
+
+.product-description{
     width:70%;
     margin-left: 75px;
 }
-.product img{
+.product-image{
     width:75%;
     margin-left: 50px;
 }
@@ -48,23 +52,16 @@ h1{
     align-items: center;
 }
 
-.products{
-    margin-bottom: 100px;
-}
 
 
 
-
-/* popular collection  */
-.collection-container{
-    width:1047px;
-    Height: 1662px;
-}
+/* popular collection 
+         store      */
 
 .collection-header{
     text-align: center;
 }
-.popular-collection{
+.collection-container-div{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     justify-content: center;
@@ -112,18 +109,29 @@ small{
 
 
 /******** feature-blog about contest ******* */
-
 .features{
     display:flex;
+    
+} 
+.feature-header{
+    text-align: center;
 }
 .feature-banner{
     width:80%;
+    margin-left: 50px;
 }
 
 .feature-description{
     margin-left: 100px;
     width:50%;
 }
+
+.feature-container{
+  margin:0px 50px 50px 50px;
+}
+
+
+
 
 /******** footer ****** */
 footer{
@@ -144,17 +152,34 @@ footer{
 }
 
 .icons{
-    margin-bottom: 15px;
-    padding:0px 8px;
+   padding-bottom: 20px;
+   
 }
 
 
 
 /******* responsive ****** */
+/* for mobile  */
 @media only screen and (max-width: 688px){
-    .products{
-        display:grid;
-        grid-template-columns: repeat(1,1fr);
-     justify-content: center;
+    body{
+        margin:0;
     }
+    .products, .collection-container-div, .features{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .product-image{
+        width:60%;
+        margin-right: 35px;
+    }
+    .contest-link, .collection-link{
+        white-space: nowrap;
+        margin-right: 15px;
+    }
+    .feature-description{
+        width:300px;
+       padding-right: 70px;
+    }
+
 }
